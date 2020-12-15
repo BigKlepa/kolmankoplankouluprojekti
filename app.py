@@ -6,6 +6,8 @@ from Config import Config
 from extensions import db
 from Models.user import User
 from Models.workspace import workspace_list
+from Models.reservation import Reservation
+
 from resources.workspace import WorkspaceListResource, WorkspaceResource, WorkspacePublishResource
 
 
@@ -16,10 +18,16 @@ def create_app():
     register_extensions(app)
     register_resources(app)
 
+    db.init_app(app)
+    with app.app_context():
+        db.create_all()
+
     return app
 def register_extensions(app):
     db.init_app(app)
     migrate = Migrate(app, db)
+
+
 
 def register_resources(app):
     api = Api(app)
@@ -29,9 +37,6 @@ def register_resources(app):
     api.add_resource(WorkspacePublishResource, '/workspaces/<int:workspace_id>/publish')
 
 
-
-
-
 if __name__ == '__main__':
     app = create_app()
-    app.run(port=5000, debug=True)
+    app.run()
