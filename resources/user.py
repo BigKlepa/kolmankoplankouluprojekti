@@ -21,3 +21,5 @@ class UserListResource(Resource):
         password = hash_password(non_hash_password)
 
             user = User(username=username, email=email, password=password)
+
+        #Testihommia testihommia
