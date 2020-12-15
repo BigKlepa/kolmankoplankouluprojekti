@@ -1,27 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kolmankoplankouluprojekti-D-main.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/reservation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/user.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Models/workspace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extensions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/README" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/alembic.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/env.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/script.py.mako" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/workspace.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/user.py" afterDir="false" />
+    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="Juhon hommelit">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -85,49 +66,30 @@
       <option name="presentableId" value="Default" />
       <updated>1606144083979</updated>
     </task>
+    <task id="LOCAL-00001" summary="Juhon hommelit">
+      <created>1608070678165</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1608070678165</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="539" y="221" width="424" height="491" key="FileChooserDialogImpl" timestamp="1606145179430">
-      <screen x="72" y="27" width="1368" height="873" />
-    </state>
-    <state x="539" y="221" width="424" height="491" key="FileChooserDialogImpl/72.27.1368.873@72.27.1368.873" timestamp="1606145179430" />
-    <state x="601" y="421" width="467" height="207" key="Github.ShareDialog" timestamp="1606161660251">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state x="522" y="363" width="467" height="207" key="Github.ShareDialog/72.27.1368.873@72.27.1368.873" timestamp="1606145024548" />
-    <state x="601" y="421" key="Github.ShareDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1606161660251" />
-    <state x="572" y="225" width="597" height="633" key="Github.UntrackedFilesDialog" timestamp="1606161678860">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state x="572" y="225" width="597" height="633" key="Github.UntrackedFilesDialog/72.27.1608.1023@72.27.1608.1023" timestamp="1606161678860" />
-    <state width="1585" height="265" key="GridCell.Tab.0.bottom" timestamp="1606158568916">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state width="1345" height="216" key="GridCell.Tab.0.bottom/72.27.1368.873@72.27.1368.873" timestamp="1606146106164" />
-    <state width="1585" height="265" key="GridCell.Tab.0.bottom/72.27.1608.1023@72.27.1608.1023" timestamp="1606158568916" />
-    <state width="1585" height="265" key="GridCell.Tab.0.center" timestamp="1606158568915">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state width="1345" height="216" key="GridCell.Tab.0.center/72.27.1368.873@72.27.1368.873" timestamp="1606146106163" />
-    <state width="1585" height="265" key="GridCell.Tab.0.center/72.27.1608.1023@72.27.1608.1023" timestamp="1606158568915" />
-    <state width="1585" height="265" key="GridCell.Tab.0.left" timestamp="1606158568915">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state width="1345" height="216" key="GridCell.Tab.0.left/72.27.1368.873@72.27.1368.873" timestamp="1606146106163" />
-    <state width="1585" height="265" key="GridCell.Tab.0.left/72.27.1608.1023@72.27.1608.1023" timestamp="1606158568915" />
-    <state width="1585" height="265" key="GridCell.Tab.0.right" timestamp="1606158568915">
-      <screen x="72" y="27" width="1608" height="1023" />
-    </state>
-    <state width="1345" height="216" key="GridCell.Tab.0.right/72.27.1368.873@72.27.1368.873" timestamp="1606146106164" />
-    <state width="1585" height="265" key="GridCell.Tab.0.right/72.27.1608.1023@72.27.1608.1023" timestamp="1606158568915" />
-    <state x="311" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1608049222413">
-      <screen x="72" y="27" width="1288" height="741" />
-    </state>
-    <state x="311" y="133" width="800" height="535" key="Vcs.Push.Dialog.v2/72.27.1288.741@72.27.1288.741" timestamp="1608049222413" />
-    <state x="497" y="312" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1608049632867">
-      <screen x="72" y="27" width="1288" height="741" />
-    </state>
-    <state x="497" y="312" width="428" height="177" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/72.27.1288.741@72.27.1288.741" timestamp="1608049632867" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Juhon hommelit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Juhon hommelit" />
   </component>
 </project>
