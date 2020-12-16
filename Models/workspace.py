@@ -14,11 +14,11 @@ def get_last_id():
 class Workspace(db.Model):
 
     __tablename__ = 'workspace'
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), nullable=False)
-    workspace_type = db.Column(db.String(100), nullable=False)
-    size = db.Column(db.Integer)
-    address = db.Column(db.String(100))
+    id = db.Column(db.Integer, primary_key=True)  # generoitu
+    name = db.Column(db.String(100), nullable=False)  # huoneen nimi, esim. Alpha tai B1032
+    workspace_type = db.Column(db.String(100), nullable=False)  # esim. luentosali, kaytava, luokka
+    size = db.Column(db.Integer)  # työtilan arvioitu kantokyky
+    address = db.Column(db.String(100))  # esim. lemminkäisenkatu, ICT-talo, Joukahaisenkatu
     is_publish = db.Column(db.Boolean(), default=False)
 
 
@@ -29,7 +29,9 @@ def data(self):
     return {
         'id': self.id,
         'name': self.name,
-        'workspace_type': self.workspace_type
+        'workspace_type': self.workspace_type,
+        'size': self.size,
+        'address': self.address
     }
 
 #  testausta. don't panic

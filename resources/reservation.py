@@ -2,83 +2,85 @@ from flask import request, jsonify
 from flask_restful import Resource
 from http import HTTPStatus
 
-from Models.workspace import Workspace, workspace_list
+from Models.reservation import Reservation, reservation_list
 
 
-class WorkspaceListResource(Resource):
+class ReservationListResource(Resource):
 
     def get(self):
         data = []
 
-        for workspace in workspace_list:
-            if workspace.is_publish is True:
-                data.append(workspace.data)
+        for reservation in reservation_list:
+            if reservation.is_publish is True:
+                data.append(reservation.data)
 
             return {'data': data}, HTTPStatus.OK
 
     def post(self):
         data = request.get_json()
 
-        workspace = Workspace(name=data['name'],
-                              workspace_type=data['workspace_type'])
+        reservation = Reservation(user_id=data['user_id'],
+                                  workspace_id=data['workspace_id'],
+                                  start_time=data['start_time'],
+                                  )
 
-        workspace_list.append(workspace)
+        reservation_list.append(reservation)
 
-        return workspace.name, HTTPStatus.CREATED
+        return reservation.id, HTTPStatus.CREATED
 
 
-class WorkspaceResource(Resource):
+class ReservationResource(Resource):
 
-    def get(self, workspace_id):
-        workspace = next((workspace for workspace in workspace_list if workspace.id == workspace_id
-                          and workspace.is_publish == True), None)
-        if workspace is None:
-            return {'message': 'workspace not found'}, HTTPStatus.NOT_FOUND
+    def get(self, reservation_id):
+        reservation = next((reservation for reservation in reservation_list if reservation.id == reservation_id
+                          and reservation.is_publish == True), None)
+        if reservation is None:
+            return {'message': 'reservation not found'}, HTTPStatus.NOT_FOUND
 
-        return workspace.data, HTTPStatus.OK
+        return reservation.data, HTTPStatus.OK
 
-    def put(self, workspace_id):
+    def put(self, reservation_id):
         data = request.get_json()
 
-        workspace = next((workspace for workspace in workspace_list if workspace.id == workspace_id), None)
+        reservation = next((reservation for reservation in reservation_list if reservation.id == reservation_id), None)
 
-        if workspace is None:
-            return {'message': 'workspace not found'}, HTTPStatus.NOT_FOUND
+        if reservation is None:
+            return {'message': 'reservation not found'}, HTTPStatus.NOT_FOUND
 
-        workspace.name = data['name']
-        workspace.workspace_type = data['workspace_type']
+        reservation.workspace_id = data['workspace_id']
+        reservation.start_time = data['start_time']
 
-        return workspace.data, HTTPStatus.OK
+        return reservation.data, HTTPStatus.OK
 
-    def delete(self, workspace_id):
-        workspace = next((workspace for workspace in workspace_list if workspace.id == workspace_id), None)
+    def delete(self, reservation_id):
+        reservation = next((reservation for reservation in reservation_list if reservation.id == reservation_id), None)
 
-        if workspace is None:
-            return {'message': 'workspace not found'}, HTTPStatus.NOT_FOUND
+        if reservation is None:
+            return {'message': 'reservation not found'}, HTTPStatus.NOT_FOUND
 
-        workspace_list.remove(workspace)
-
-        return {}, HTTPStatus.NO_CONTENT
-
-
-class WorkspacePublishResource(Resource):
-
-    def put(self, workspace_id):
-        workspace = next((workspace for workspace in workspace_list if workspace.id == workspace_id), None)
-
-        if workspace is None:
-            return {'message': 'workspace not found'}, HTTPStatus.NOT_FOUND
-
-        workspace.is_publish = True
+        reservation_list.remove(reservation)
 
         return {}, HTTPStatus.NO_CONTENT
 
-    def delete(self, workspace_id):
-        workspace = next((workspace for workspace in workspace_list if workspace.id == workspace_id), None)
 
-        if workspace is None:
-            return {'message': 'Workspace not found'}, HTTPStatus.NOT_FOUND
+class ReservationPublishResource(Resource):
 
-        workspace.is_publish = False
+    def put(self, reservation_id):
+        reservation = next((reservation for reservation in reservation_list if reservation.id == reservation_id), None)
+
+        if reservation is None:
+            return {'message': 'reservation not found'}, HTTPStatus.NOT_FOUND
+
+        reservation.is_publish = True
+
+        return {}, HTTPStatus.NO_CONTENT
+
+    def delete(self, reservation_id):
+        reservation = next((reservation for reservation in reservation_list if reservation.id == reservation_id), None)
+
+        if reservation is None:
+            return {'message': 'Reservation not found'}, HTTPStatus.NOT_FOUND
+
+        reservation.is_publish = False
 
         return {}, HTTPStatus.NO_CONTENT
