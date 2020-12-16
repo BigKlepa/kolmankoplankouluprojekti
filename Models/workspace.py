@@ -1,15 +1,7 @@
 from extensions import db
 
-workspace_list = []
-
 # commit Joni
 
-def get_last_id():
-    if workspace_list:
-        last_workspace = workspace_list[-1]
-    else:
-        return 1
-    return last_workspace + 1
 
 
 class Workspace(db.Model):
@@ -34,5 +26,22 @@ def data(self):
         'size': self.size,
         'address': self.address
     }
+
+@classmethod
+def get_all_published(cls):
+    return cls.query.filter_by(is_publish=True).all()
+
+@classmethod
+def get_by_id(cls, workspace_id):
+    return cls.query.filter_by(id=workspace_id).first()
+
+def save(self):
+    db.session.add(self)
+    db.session.commit()
+
+def delete(self):
+    db.session.delete(self)
+    db.session.commit()
+
 
 #  testausta. don't panic
