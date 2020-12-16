@@ -10,7 +10,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="siel on vähä kommenttii ja muuta nyt" />
+    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="Jonin hommelit">
+      <change beforePath="$PROJECT_DIR$/resources/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/token.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,49 +89,7 @@
       <option name="project" value="LOCAL" />
       <updated>1608070328825</updated>
     </task>
-    <task id="LOCAL-00003" summary="Jonin hommelit">
-      <created>1608070366141</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1608070366141</updated>
-    </task>
-    <task id="LOCAL-00004" summary="mergetestaushommeleita">
-      <created>1608070948292</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1608070948292</updated>
-    </task>
-    <task id="LOCAL-00005" summary="mergetestaushommeleita">
-      <created>1608071410665</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1608071410665</updated>
-    </task>
-    <task id="LOCAL-00006" summary="mergetestaushommeleita">
-      <created>1608089974887</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1608089974887</updated>
-    </task>
-    <task id="LOCAL-00007" summary="mergetestaushommeleita">
-      <created>1608090089565</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1608090089565</updated>
-    </task>
-    <task id="LOCAL-00008" summary="siel on vähä kommenttii ja muuta nyt">
-      <created>1608108067341</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1608108067341</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,8 +106,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jonin hommelit" />
-    <MESSAGE value="mergetestaushommeleita" />
-    <MESSAGE value="siel on vähä kommenttii ja muuta nyt" />
-    <option name="LAST_COMMIT_MESSAGE" value="siel on vähä kommenttii ja muuta nyt" />
+    <option name="LAST_COMMIT_MESSAGE" value="Jonin hommelit" />
   </component>
 </project>
