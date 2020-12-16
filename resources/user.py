@@ -1,7 +1,7 @@
 from flask import request
 from flask_restful import Resource
 from http import HTTPStatus
-from utils import hash_password
+from utils import hash_password, check_password
 from Models.user import User
 
 
@@ -18,7 +18,7 @@ class UserListResource(Resource):
             return {'message': 'username already'}, HTTPStatus.BAD_REQUEST
 
         if User.get_by_email(email):
-            return {'message':'email already used'}, HTTPStatus.BAD_REQUEST
+            return {'message': 'email already exists'}, HTTPStatus.BAD_REQUEST
 
         password = hash_password(non_hash_password)
 
@@ -26,7 +26,7 @@ class UserListResource(Resource):
         user.save()
 
         data = {
-            'id':user.id,
+            'id': user.id,
             'username': user.username,
             'email': user.email
         }
