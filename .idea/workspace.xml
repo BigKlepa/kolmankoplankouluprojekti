@@ -10,8 +10,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="Jonin hommelit">
+    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="Testausta">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Config.py" beforeDir="false" afterPath="$PROJECT_DIR$/Config.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/token.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/token.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,7 +95,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608070328825</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Testausta">
+      <created>1608109372984</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1608109372984</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -106,6 +119,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jonin hommelit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Jonin hommelit" />
+    <MESSAGE value="Testausta" />
+    <option name="LAST_COMMIT_MESSAGE" value="Testausta" />
   </component>
 </project>

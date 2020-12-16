@@ -3,7 +3,7 @@ from flask_restful import Api
 from flask_migrate import Migrate
 
 from Config import Config
-from extensions import db
+from extensions import db, jwt
 from Models.workspace import workspace_list
 from Models.reservation import Reservation, reservation_list
 
@@ -29,12 +29,15 @@ def create_app():
 def register_extensions(app):
     db.init_app(app)
     migrate = Migrate(app, db)
+    jwt.init_app(app)
 
 
 def register_resources(app):
     api = Api(app)
 
     api.add_resource(UserListResource, '/users')
+    api.add_resource(UserResource, '/users/<string:username>')
+    api.add_resource(TokenResource, '/token')
     api.add_resource(WorkspaceListResource, '/workspaces')
     api.add_resource(WorkspaceResource, '/workspaces/<int:workspace_id>')
     api.add_resource(WorkspacePublishResource, '/workspaces/<int:workspace_id>/publish')
