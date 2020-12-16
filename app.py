@@ -4,7 +4,7 @@ from flask_migrate import Migrate
 
 from Config import Config
 from extensions import db
-from Models.user import User
+from resources.user import UserListResource
 from Models.workspace import workspace_list
 from Models.reservation import Reservation
 
@@ -32,6 +32,7 @@ def register_extensions(app):
 def register_resources(app):
     api = Api(app)
 
+    api.add_resource(UserListResource, '/users')
     api.add_resource(WorkspaceListResource, '/workspaces')
     api.add_resource(WorkspaceResource, '/workspaces/<int:workspace_id>')
     api.add_resource(WorkspacePublishResource, '/workspaces/<int:workspace_id>/publish')

@@ -4,7 +4,9 @@ from http import HTTPStatus
 from utils import hash_password
 from Models.user import User
 
+
 class UserListResource(Resource):
+
     def post(self):
         json_data = request.get_json()
 
@@ -20,6 +22,13 @@ class UserListResource(Resource):
 
         password = hash_password(non_hash_password)
 
-            user = User(username=username, email=email, password=password)
+        user = User(username=username, email=email, password=password)
+        user.save()
 
-        #Testihommia testihommia
+        data = {
+            'id':user.id,
+            'username': user.username,
+            'email': user.email
+        }
+
+        return data, HTTPStatus.CREATED
