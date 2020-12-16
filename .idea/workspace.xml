@@ -10,16 +10,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="mergetestaushommeleita">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/reservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/reservation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/user.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Models/workspace.py" beforeDir="false" afterPath="$PROJECT_DIR$/Models/workspace.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extensions.py" beforeDir="false" afterPath="$PROJECT_DIR$/extensions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/reservation.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/reservation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/resources/user.py" afterDir="false" />
-    </list>
+    <list default="true" id="2c25e008-b2da-4364-8cb9-cb52e9cceaf1" name="Default Changelist" comment="siel on vähä kommenttii ja muuta nyt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -131,7 +122,14 @@
       <option name="project" value="LOCAL" />
       <updated>1608090089565</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="siel on vähä kommenttii ja muuta nyt">
+      <created>1608108067341</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1608108067341</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Jonin hommelit" />
     <MESSAGE value="mergetestaushommeleita" />
-    <option name="LAST_COMMIT_MESSAGE" value="mergetestaushommeleita" />
+    <MESSAGE value="siel on vähä kommenttii ja muuta nyt" />
+    <option name="LAST_COMMIT_MESSAGE" value="siel on vähä kommenttii ja muuta nyt" />
   </component>
 </project>
